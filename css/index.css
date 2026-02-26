@@ -23,10 +23,20 @@ body {
     z-index: 9999;
     background: transparent;
     backdrop-filter: blur(6px);
-    font-family: 'Lato';
+    font-family: 'Inter';
     line-height: 1.5;
     font-weight: bold;
+    transition: color 0.4s ease, background 0.4s ease;
+}
+
+#header.dark {
+    color: #fff;
+    background: rbga(0,0,0,0.6);
+}
+
+#header.light {
     color: #222;
+    background: rbga(255,255,255,0.8);
 }
 
 #header .inner {
@@ -181,7 +191,7 @@ body {
 
 /* 프로젝트 */
 .section.project {
-    background-color: #d5d5d5;
+    background-color: #222222;
 }
 .section.project .inner {
     margin: 0 auto;
@@ -193,6 +203,7 @@ body {
     font-size: 48px;
     font-weight: bold;
     text-align: center;
+    color: #fff;
 }
 
 
