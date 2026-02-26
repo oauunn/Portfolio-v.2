@@ -74,6 +74,23 @@
                     </div><!-- .text end -->
                 </div><!-- .box-3 end -->
                 <div class="box-4">
+                    <h3>AWARDS</h3>
+                    <div class="text">
+                        <ul>
+                            <li>2022</li>
+                            <li>2021</li>
+                        </ul>
+                        <ul>
+                            <li>제26회 부산 텍스타일 공모전　장려상</li>
+                            <li>제 8회 서울 국제일러스트레이션 공모전　장려상</li>
+                        </ul>
+                        <ul>
+                            <li>(사)부산섬유패션산업연합회</li>
+                            <li>서울국제일러스트레이션운영위원회</li>
+                        </ul>
+                    </div><!-- .text end -->
+                </div><!-- .box-4 end -->
+                <div class="box-5">
                     <h3>EDUCATION</h3>
                     <div class="text">
                         <ul>
@@ -92,8 +109,8 @@
                             <li>졸업 2017. 03 - 2020. 01</li>
                         </ul>
                     </div><!-- .text end -->
-                </div><!-- .box-4 end -->
-                <div class="box-5">
+                </div><!-- .box-5 end -->
+                <div class="box-6">
                     <h3>SKILL</h3>
                     <ul>
                         <li><img src="img/html.png" alt="HTML"></li>
@@ -154,6 +171,63 @@
             <p>ⓒ 2025 O·Haeun. All Rights Reserved.</p>
         </div><!-- .inner end -->
     </section><!-- #footer end -->
+
+
+    <!-- modal gallery -->
+    <div class="modal">
+        <button class="prev">&#10094;</button>
+        <img class="modal-img" src="" alt="확대 이미지">
+        <button class="next">&#10095;</button>
+        <span class="close">&times;</span>
+    </div><!-- .modal end -->
+
+    <script>
+    const images = document.querySelectorAll('#main.design .item img');
+    const modal = document.querySelector('.modal');
+    const modalImg = document.querySelector('.modal-img');
+    const prev = document.querySelector('.prev');
+    const next = document.querySelector('.next');
+    const close = document.querySelector('.close');
+
+    let current = 0;
+
+    function showModal(index) {
+        modal.classList.add('active');
+        modalImg.src = images[index].src;
+        current = index;
+    }
+
+    images.forEach((img, index) => {
+        img.addEventListener('click', () => showModal(index));
+    });
+
+    next.addEventListener('click', () => {
+        current = (current + 1) % images.length;
+        showModal(current);
+    });
+
+    prev.addEventListener('click', () => {
+        current = (current - 1 + images.length) % images.length;
+        showModal(current);
+    });
+
+    close.addEventListener('click', () => {
+        modal.classList.remove('active');
+    });
+
+    modal.addEventListener('click', (e) => {
+        if(e.target === modal) modal.classList.remove('active');
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if(!modal.classList.contains('active')) return;
+
+        if(e.key === 'Escape') modal.classList.remove('active');
+        if(e.key === 'ArrowRight') next.click();
+        if(e.key === 'ArrowLeft') prev.click();
+    });
+</script>
+
 </body>
 
 </html>
