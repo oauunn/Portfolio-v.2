@@ -4,13 +4,25 @@
 
 body {
     min-width: 1920px;
+    overflow: hidden;
     background-color: #f5f5f5;
 }
-
+.section {
+    height: 100vh;
+    padding-top: 0;
+}
 
 
 /* 헤더 */
 #header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    z-index: 9999;
+    background: transparent;
+    backdrop-filter: blur(6px);
     font-family: 'Lato';
     line-height: 1.5;
     font-weight: bold;
@@ -18,7 +30,7 @@ body {
 }
 
 #header .inner {
-    padding: 50px;
+    padding: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -45,14 +57,14 @@ body {
 
 
 /* 인트로 */
-#main.intro .inner {
+.section.intro .inner {
     height: 1080px;
     line-height: 1080px;
     text-align: center;
-    background-color: #777;
+    background-color: #fafafa;
 }
 
-#main.intro .inner h1 {
+.section.intro .inner h1 {
     font-family: 'Lexend Zetta';
     font-size: 160px;
     font-weight: bold;
@@ -63,100 +75,102 @@ body {
 
 
 /* 어바웃 */
-#main.about {
-    padding: 200px 0;
+.section.about {
+    padding: 50px 0;
     font-family: 'Pretendard', 'Noto Sans KR';
     line-height: 1.5;
     color: #222;
     background-color: #f6f6f6;
 }
 
-#main.about .inner {
+.section.about .inner {
+    padding-top: 120px;
     margin: 0 auto;
     width: 1520px;
     display: flex;
-    gap: 200px;
+    justify-content: space-between;
 }
 
-#main.about .inner .left {
+.section.about .inner .left {
+    padding-left: 100px;
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
 
-#main.about .inner .left .picture {
+.section.about .inner .left .picture {
     width: 400px;
 }
 
-#main.about .inner .left .picture img {
+.section.about .inner .left .picture img {
     width: 100%;
     object-fit: cover;
 }
 
-#main.about .inner .left .text {
+.section.about .inner .left .text {
     display: flex;
     gap: 40px;
 }
 
-#main.about .inner .left .text .box-1 {
+.section.about .inner .left .text .box-1 {
     display: flex;
     flex-direction: column;
     gap: 10px;
     font-weight: 600;
 }
 
-#main.about .inner .left .text .box-2 {
+.section.about .inner .left .text .box-2 {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-#main.about .inner .right {
+.section.about .inner .right {
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 
-#main.about .inner .right .box-3,
-#main.about .inner .right .box-4,
-#main.about .inner .right .box-5,
-#main.about .inner .right .box-6 {
+.section.about .inner .right .box-3,
+.section.about .inner .right .box-4,
+.section.about .inner .right .box-5,
+.section.about .inner .right .box-6 {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-#main.about .inner .right .box-3 h3,
-#main.about .inner .right .box-4 h3,
-#main.about .inner .right .box-5 h3,
-#main.about .inner .right .box-6 h3 {
+.section.about .inner .right .box-3 h3,
+.section.about .inner .right .box-4 h3,
+.section.about .inner .right .box-5 h3,
+.section.about .inner .right .box-6 h3 {
     font-size: 20px;
     font-weight: 600;
 }
 
-#main.about .inner .right .box-3 .text,
-#main.about .inner .right .box-4 .text,
-#main.about .inner .right .box-5 .text {
+.section.about .inner .right .box-3 .text,
+.section.about .inner .right .box-4 .text,
+.section.about .inner .right .box-5 .text {
     display: flex;
     gap: 50px;
     font-size: 16px;
 }
 
-#main.about .inner .right .box-3 .text ul,
-#main.about .inner .right .box-4 .text ul,
-#main.about .inner .right .box-5 .text ul {
+.section.about .inner .right .box-3 .text ul,
+.section.about .inner .right .box-4 .text ul,
+.section.about .inner .right .box-5 .text ul {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-#main.about .inner .right .box-3 .text ul:last-child,
-#main.about .inner .right .box-4 .text ul:last-child,
-#main.about .inner .right .box-5 .text ul:last-child {
+.section.about .inner .right .box-3 .text ul:last-child,
+.section.about .inner .right .box-4 .text ul:last-child,
+.section.about .inner .right .box-5 .text ul:last-child {
     color: #777;
 }
 
-#main.about .inner .right .box-6 ul {
+.section.about .inner .right .box-6 ul {
     display: flex;
     gap: 20px;
 }
@@ -166,15 +180,15 @@ body {
 
 
 /* 프로젝트 */
-#main.project {
-    padding: 200px 0;
+.section.project {
     background-color: #d5d5d5;
 }
-#main.project .inner {
-    width: 1720px;
+.section.project .inner {
     margin: 0 auto;
+    padding-top: 120px;
+    width: 1720px;
 }
-#main.project .inner h2 {
+.section.project .inner h2 {
     font-family: 'Lexend Zetta';
     font-size: 48px;
     font-weight: bold;
@@ -185,63 +199,68 @@ body {
 
 
 /* 디자인 */
-#main.design {
-    padding: 200px 0 300px 0;
-    background-color: #222;
+.section.design {
+    background-color: #1c1c1c;
 }
-#main.design .inner {
+.section.design .inner {
+    padding-top: 120px;
     width: 1720px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 100px;
 }
-#main.design .inner h2 {
+.section.design .inner h2 {
     font-family: 'Lexend Zetta';
     font-size: 48px;
     font-weight: bold;
     text-align: center;
     color: #fff;
 }
-#main.design .inner .item {
+.section.design .inner .item {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-#main.design .inner .item li {
+.section.design .inner .item li {
     width: 400px;
 }
-#main.design .inner .item li img {
+.section.design .inner .item li img {
     width: 100%;
     object-fit: cover;
     border: 1px solid #fff;
 }
+
+
+
+
 /* 컨택 */
-#main.contact {
+.section.contact {
     padding: 300px 0 200px 0;
 }
-#main.contact .inner {
+.section.contact .inner {
+    padding-top: 120px;
     display: flex;
     flex-direction: column;
     gap: 200px;
     align-items: center;
     text-align: center;
 }
-#main.contact .inner h3 {
+.section.contact .inner h3 {
     font-family: 'Lato';
     font-size: 28px;
     font-weight: bold;
     line-height: 1.5;
     letter-spacing: 5px;
 }
-#main.contact .inner .icon {
+.section.contact .inner .icon {
     display: flex;
     gap: 50px;
 }
-#main.contact .inner .icon li {
+.section.contact .inner .icon li {
     width: 50px;
 }
-#main.contact .inner .icon img {
+.section.contact .inner .icon img {
     width: 100%;
     object-fit: cover;
 }
@@ -250,17 +269,22 @@ body {
 
 /* 푸터 */
 #footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
     background-color: #333;
     font-family: 'Source Code Pro', 'Lato';
 }
 #footer .inner {
     display: block;
-    padding: 20px 0;
+    padding: 10px 0;
     text-align: center;
     color: #fff;
 }
 #footer .inner p {
-    font-size: 14px;
+    font-size: 11px;
     font-weight: 500;
     line-height: 1.5;
 }
@@ -270,8 +294,6 @@ body {
 
 
 /* 모달 */
-
-/* modal gallery */
 .modal {
     position: fixed;
     inset: 0;
