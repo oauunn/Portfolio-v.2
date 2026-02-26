@@ -1,0 +1,261 @@
+@charset "utf-8";
+@import url('reset.css');
+@import url('font.css');
+
+body {
+    min-width: 1920px;
+    background-color: #f5f5f5;
+}
+
+
+
+/* 헤더 */
+#header {
+    font-family: 'Lato';
+    line-height: 1.5;
+    font-weight: bold;
+    color: #222;
+}
+
+#header .inner {
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header .inner .name {
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+#header .inner .menu {
+    display: flex;
+    gap: 40px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#header .inner .menu li:hover {
+    font-weight: bold;
+}
+
+
+
+
+
+/* 인트로 */
+#main.intro .inner {
+    height: 1080px;
+    line-height: 1080px;
+    text-align: center;
+    background-color: #777;
+}
+
+#main.intro .inner h1 {
+    font-family: 'Lexend Zetta';
+    font-size: 160px;
+    font-weight: bold;
+}
+
+
+
+
+
+/* 어바웃 */
+#main.about {
+    padding: 200px 0;
+    font-family: 'Pretendard', 'Noto Sans KR';
+    line-height: 1.5;
+    color: #222;
+    background-color: #f6f6f6;
+}
+
+#main.about .inner {
+    margin: 0 auto;
+    width: 1520px;
+    display: flex;
+    gap: 200px;
+}
+
+#main.about .inner .left {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#main.about .inner .left .picture {
+    width: 400px;
+}
+
+#main.about .inner .left .picture img {
+    width: 100%;
+    object-fit: cover;
+}
+
+#main.about .inner .left .text {
+    display: flex;
+    gap: 40px;
+}
+
+#main.about .inner .left .text .box-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-weight: 600;
+}
+
+#main.about .inner .left .text .box-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#main.about .inner .right {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+#main.about .inner .right .box-3,
+#main.about .inner .right .box-4,
+#main.about .inner .right .box-5 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#main.about .inner .right .box-3 h3,
+#main.about .inner .right .box-4 h3,
+#main.about .inner .right .box-5 h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#main.about .inner .right .box-3 .text,
+#main.about .inner .right .box-4 .text {
+    display: flex;
+    gap: 50px;
+    font-size: 16px;
+}
+
+#main.about .inner .right .box-3 .text ul,
+#main.about .inner .right .box-4 .text ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#main.about .inner .right .box-3 .text ul:last-child,
+#main.about .inner .right .box-4 .text ul:last-child {
+    color: #777;
+}
+
+#main.about .inner .right .box-5 ul {
+    display: flex;
+    gap: 20px;
+}
+
+
+
+
+
+/* 프로젝트 */
+#main.project {
+    padding: 200px 0;
+    background-color: #d5d5d5;
+}
+#main.project .inner {
+    width: 1720px;
+    margin: 0 auto;
+}
+#main.project .inner h2 {
+    font-family: 'Lexend Zetta';
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
+
+/* 디자인 */
+#main.design {
+    padding: 200px 0 300px 0;
+    background-color: #222;
+}
+#main.design .inner {
+    width: 1720px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+#main.design .inner h2 {
+    font-family: 'Lexend Zetta';
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+}
+#main.design .inner .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#main.design .inner .item li {
+    width: 400px;
+}
+#main.design .inner .item li img {
+    width: 100%;
+    object-fit: cover;
+    border: 1px solid #fff;
+}
+/* 컨택 */
+#main.contact {
+    padding: 300px 0 200px 0;
+}
+#main.contact .inner {
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+    align-items: center;
+    text-align: center;
+}
+#main.contact .inner h3 {
+    font-family: 'Lato';
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 1.5;
+    letter-spacing: 5px;
+}
+#main.contact .inner .icon {
+    display: flex;
+    gap: 50px;
+}
+#main.contact .inner .icon li {
+    width: 50px;
+}
+#main.contact .inner .icon img {
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+/* 푸터 */
+#footer {
+    background-color: #333;
+    font-family: 'Courier New', Courier, monospace;
+}
+#footer .inner {
+    display: block;
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+}
+#footer .inner p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+}
