@@ -128,6 +128,7 @@ img {
 .section.about .inner .left .picture img {
     width: 100%;
     object-fit: cover;
+    border: 1px solid #777;
 }
 
 .section.about .inner .left .text {
