@@ -72,6 +72,10 @@ img {
 
 
 /* 인트로 */
+.section.intro {
+    background-color: #fafafa;
+}
+
 .section.intro .inner {
     max-width: 1920px;
     width: 100%;
@@ -79,7 +83,6 @@ img {
     height: 100vh;
     line-height: 100vh;
     text-align: center;
-    background-color: #fafafa;
 }
 
 .section.intro .inner h1 {
@@ -218,8 +221,76 @@ img {
     font-weight: bold;
     text-align: center;
     color: #fff;
+    margin-bottom: 50px;
 }
 
+.section.project .inner .tab {
+    display: flex;
+    gap: 20px;
+    font-family: 'Pretendard', 'Noto Sans KR';
+    font-size: 16px;
+    font-weight: 400;
+    color: #222222;
+    margin-bottom: 50px;
+}
+
+.section.project .inner .tab button {
+    background-color: #f5f5f5;
+    padding: 10px 20px;
+    border: 1px solid #222222;
+    border-radius: 50px;
+}
+
+.section.project .inner .tab button:active {
+    background-color: darkorange;
+    /* color: #f5f5f5; */
+}
+
+.section.project .inner .list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section.project .inner .list .item {
+    display: inline-block;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.section.project .inner .list .item img {
+    width: 400px;
+    object-fit: cover;
+    border: 1px solid #222222;
+    margin-bottom: 10px;
+}
+
+.section.project .inner .list .item .text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: 'Pretendard', 'Noto Sans KR';
+    line-height: 1.5;
+}
+
+.section.project .inner .list .item .text h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.section.project .inner .list .item .text p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.section.project .inner .list .item .text ul {
+    display: flex;
+    gap: 20px;
+}
+
+.section.project .inner .list .item .text ul li {
+    font-size: 14px;
+    font-weight: 400;
+}
 
 
 
