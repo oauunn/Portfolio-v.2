@@ -300,10 +300,10 @@ img {
 
 .section.project .inner .list .item .text a {
     padding: 10px 20px;
+    border: 1px solid #222;
     border-radius: 50px;
     font-size: 14px;
     font-weight: 500;
-    align-items:;
     text-align: center;
     background-color: darkorange;
 }
