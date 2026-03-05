@@ -134,13 +134,14 @@
     <section class="section project" id="project" data-theme="dark">
         <div class="inner">
             <h2>PROJECT</h2>
-            <ul class="tab">
-                <li><button>Web</button></li>
-                <li><button>Mobile</button></li>
-                <li><button>Clone Coading</button></li>
-            </ul><!-- .tab end -->
+            <div class="tab">
+                <button class="active" data-filter="all">All</button>
+                <button data-filter="web">Web</button>
+                <button data-filter="mobile">Mobile</button>
+                <button data-filter="clone">Clone</button>
+            </div><!-- .tab end -->
             <div class="list">
-                <div class="item">
+                <div class="item" data-type="web">
                     <img src="img/Vans-main.jpg" alt="반스">
                     <div class="text">
                         <h3>VANS</h3>
@@ -153,7 +154,7 @@
                         <a href="#">바로가기</a>
                     </div><!-- .text end -->
                 </div><!-- .item end -->
-                <div class="item">
+                <div class="item" data-type="web">
                     <img src="img/CASETiFY-intro.jpg" alt="케이스티파이">
                     <div class="text">
                         <h3>CASETiFY</h3>
@@ -166,7 +167,7 @@
                         <a href="#">바로가기</a>
                     </div><!-- .text end -->
                 </div><!-- .item end -->
-                <div class="item">
+                <div class="item" data-type="web">
                     <img src="img/STANLEY-main.jpg" alt="스탠리">
                     <div class="text">
                         <h3>STANLEY</h3>
@@ -179,7 +180,7 @@
                         <a href="#">바로가기</a>
                     </div><!-- .text end -->
                 </div><!-- .item end -->
-                <div class="item">
+                <div class="item" data-type="web">
                     <img src="img/Olens-main.jpg" alt="오렌즈">
                     <div class="text">
                         <h3>OLENS</h3>
@@ -192,13 +193,13 @@
                         <a href="#">바로가기</a>
                     </div><!-- .text end -->
                 </div><!-- .item end -->
-                <div class="item">
-                    <img src="img/.jpg" alt="반스">
+                <div class="item" data-type="mobile">
+                    <img src="img/Kyobo-mobile.jpg" alt="교보문고">
                     <div class="text">
-                        <h3>Vans</h3>
-                        <p>반스 웹페이지를 제작하였습니다.</p>
+                        <h3>교보문고</h3>
+                        <p>교보문고 모바일 앱페이지를 리뉴얼하여 제작하였습니다.</p>
                         <ul>
-                            <li>#Web</li>
+                            <li>#Mobile</li>
                             <li>#Web</li>
                             <li>#Web</li>
                         </ul>
@@ -325,6 +326,39 @@
                 target.scrollIntoView({
                     behavior: "smooth",
                     block: "start"
+                });
+
+            });
+
+        });
+    </script>
+
+    <!-- 프로젝트 탭 필터 -->
+    <script>
+        const filterBtns = document.querySelectorAll(".tab button");
+        const items = document.querySelectorAll(".project .item");
+
+        filterBtns.forEach(btn => {
+
+            btn.addEventListener("click", () => {
+
+                const filter = btn.dataset.filter;
+
+                /* 버튼 active */
+
+                filterBtns.forEach(b => b.classList.remove("active"));
+                btn.classList.add("active");
+
+                /* 프로젝트 필터 */
+
+                items.forEach(item => {
+
+                    if (filter === "all" || item.dataset.type === filter) {
+                        item.style.display = "block";
+                    } else {
+                        item.style.display = "none";
+                    }
+
                 });
 
             });

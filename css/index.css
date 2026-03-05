@@ -72,10 +72,6 @@ body {
     font-weight: 500;
 }
 
-#header .inner .menu li:hover {
-    font-weight: bold;
-}
-
 
 
 
@@ -251,7 +247,7 @@ body {
     border-radius: 50px;
 }
 
-.section.project .inner .tab button:active {
+.section.project .inner .tab button.active {
     background-color: darkorange;
     /* color: #f5f5f5; */
 }
@@ -260,7 +256,7 @@ body {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    row-gap: 50px;
+    row-gap: 70px;
     padding-bottom: 200px;
 }
 
