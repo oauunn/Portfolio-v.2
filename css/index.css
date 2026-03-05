@@ -381,7 +381,13 @@ img {
     gap: 100px;
 }
 
-.section.ai .inner {}
+.section.ai .inner h2 {
+    font-family: 'Lexend Zetta';
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+}
 
 
 
