@@ -383,7 +383,7 @@ img {
     font-family: 'Lato';
     font-size: 28px;
     font-weight: bold;
-    line-height: 1.5;
+    line-height: 2;
     letter-spacing: 5px;
 }
 
@@ -415,14 +415,13 @@ img {
 }
 
 #footer .inner {
-    display: block;
-    padding: 10px 0;
+    padding: 15px 0;
     text-align: center;
     color: #fff;
 }
 
 #footer .inner p {
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 500;
     line-height: 1.5;
 }
