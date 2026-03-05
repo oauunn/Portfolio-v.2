@@ -15,18 +15,19 @@
                 <span>O ・ Haeun</span>
             </div><!-- .name end -->
             <ul class="menu">
-                <li>Intro</li>
-                <li>About</li>
-                <li>Project</li>
-                <li>Design</li>
-                <li>Contact</li>
+                <li data-link="intro">Intro</li>
+                <li data-link="about">About</li>
+                <li data-link="project">Project</li>
+                <li data-link="design">Design</li>
+                <li data-link="ai">AI</li>
+                <li data-link="contact">Contact</li>
             </ul><!-- .menu end -->
         </div><!-- .inner end -->
     </section><!-- #header end -->
 
 
 
-    <section class="section intro" data-theme="light">
+    <section class="section intro" id="intro" data-theme="light">
         <div class="inner">
             <h1>Portfolio</h1>
         </div><!-- .inner end -->
@@ -34,7 +35,7 @@
 
 
 
-    <section class="section about" data-theme="light">
+    <section class="section about" id="about" data-theme="light">
         <div class="inner">
             <div class="left">
                 <div class="picture">
@@ -130,7 +131,7 @@
 
 
 
-    <section class="section project" data-theme="dark">
+    <section class="section project" id="project" data-theme="dark">
         <div class="inner">
             <h2>PROJECT</h2>
             <ul class="tab">
@@ -223,7 +224,7 @@
 
 
 
-    <section class="section design" data-theme="dark">
+    <section class="section design" id="design" data-theme="dark">
         <div class="inner">
             <h2>DESIGN</h2>
             <ul class="item"> <!-- 스와이퍼 슬라이드 이용 -->
@@ -240,7 +241,7 @@
 
 
 
-    <section class="section ai" data-theme="dark">
+    <section class="section ai" id="ai" data-theme="dark">
         <div class="inner">
             <h2>AI</h2>
         </div><!-- .inner end -->
@@ -248,7 +249,7 @@
 
 
 
-    <section class="section contact" data-theme="light">
+    <section class="section contact" id="contact" data-theme="light">
         <div class="inner">
             <h3>꾸준히 트렌드를 체크하여 역량을 키우고 항상 배우는 자세로 성장하며,</br>회사의 비전과 함께 발전하는 UI/UX 프론트엔드 디자이너가 되겠습니다.</h3>
             <ul class="icon">
@@ -257,24 +258,15 @@
                 <li><a href="#"><img src="img/github.png" alt="깃허브"></a></li>
             </ul><!-- .icon end -->
         </div><!-- .inner end -->
+        <div class="footer">
+            <p>ⓒ 2025 O·Haeun. All Rights Reserved.</p>
+        </div><!-- .footer end -->
     </section><!-- .section contact end -->
 
 
 
-    <section id="footer">
-        <div class="inner">
-            <p>ⓒ 2025 O·Haeun. All Rights Reserved.</p>
-        </div><!-- .inner end -->
-    </section><!-- #footer end -->
-
-
-
-    <!-- 풀페이지 스크롤 -->
+    <!-- 스크롤 -->
     <script>
-        const sections = document.querySelectorAll('.section');
-        let currentSection = 0;
-        let isScrolling = false;
-
         function scrollToSection(index) {
             isScrolling = true;
             window.scrollTo({
@@ -286,46 +278,58 @@
                 isScrolling = false;
             }, 800);
         }
-
-        window.addEventListener('wheel', (e) => {
-            if (isScrolling) return;
-
-            if (e.deltaY > 0) {
-                if (currentSection < sections.length - 1) currentSection++;
-            } else {
-                if (currentSection > 0) currentSection--;
-            }
-
-            scrollToSection(currentSection);
-        }, { passive: false });
     </script>
 
     <!-- 헤더 색 변경 -->
     <script>
+        const sections = document.querySelectorAll('.section');
         const header = document.getElementById('header');
 
-        function updateHeaderTheme(index) {
-            const theme = sections[index].dataset.theme;
+        function updateHeaderTheme() {
+
+            let current = 0;
+
+            sections.forEach((section, index) => {
+
+                const top = section.offsetTop - 200;
+
+                if (window.scrollY >= top) {
+                    current = index;
+                }
+
+            });
+
+            const theme = sections[current].dataset.theme;
 
             header.classList.remove('dark', 'light');
             header.classList.add(theme);
+
         }
 
-        updateHeaderTheme(0); // 첫 진입 시
+        window.addEventListener('scroll', updateHeaderTheme);
 
-        function scrollToSection(index) {
-            isScrolling = true;
-            window.scrollTo({
-                top: sections[index].offsetTop,
-                behavior: 'smooth'
+        updateHeaderTheme();
+    </script>
+
+    <!-- 메뉴 클릭 스크롤 -->
+    <script>
+        const menuItems = document.querySelectorAll(".menu li");
+
+        menuItems.forEach(item => {
+
+            item.addEventListener("click", () => {
+
+                const targetId = item.dataset.link;
+                const target = document.getElementById(targetId);
+
+                target.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start"
+                });
+
             });
 
-            updateHeaderTheme(index);
-
-            setTimeout(() => {
-                isScrolling = false;
-            }, 800);
-        }
+        });
     </script>
 
     <!-- 모달 -->

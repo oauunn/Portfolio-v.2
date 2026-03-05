@@ -2,19 +2,26 @@
 @import url('reset.css');
 @import url('font.css');
 
-body {
-    overflow: hidden;
-    background-color: #f5f5f5;
+html {
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
+html::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    overflow-x: hidden;
 }
 
 .section {
     min-height: 100vh;
-    box-sizing: border-box;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    scroll-padding-top: 120px;
 }
 
 
@@ -82,7 +89,7 @@ img {
     max-width: 1920px;
     width: 100%;
     margin: 0 auto;
-    height: 100vh;
+    min-height: 100vh;
     line-height: 100vh;
     text-align: center;
 }
@@ -110,7 +117,7 @@ img {
     max-width: 1520px;
     width: 100%;
     padding: 0 20px;
-    padding-top: 200px;
+    padding-top: 120px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -254,6 +261,7 @@ img {
     justify-content: space-between;
     flex-wrap: wrap;
     row-gap: 50px;
+    padding-bottom: 200px;
 }
 
 .section.project .inner .list .item {
@@ -396,6 +404,7 @@ img {
 /* 컨택 */
 .section.contact {
     padding: 300px 0 200px 0;
+    position: relative;
 }
 
 .section.contact .inner {
@@ -436,23 +445,19 @@ img {
 
 
 /* 푸터 */
-#footer {
-    position: fixed;
-    bottom: 0;
+.section.contact .footer {
+    position: absolute;
     left: 0;
+    bottom: 0;
     width: 100%;
-    z-index: 9999;
     background-color: #333;
     font-family: 'Source Code Pro', 'Lato';
-}
-
-#footer .inner {
-    padding: 15px 0;
+    padding: 20px 0;
     text-align: center;
     color: #fff;
 }
 
-#footer .inner p {
+.section.contact .footer p {
     font-size: 12px;
     font-weight: 500;
     line-height: 1.5;
