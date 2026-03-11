@@ -49,7 +49,7 @@ body {
 }
 
 #header.light {
-    color: #222;
+    color: #111;
     background: rbga(255, 255, 255, 0.8);
 }
 
@@ -94,8 +94,58 @@ body {
     font-family: 'Lexend Zetta';
     font-size: 160px;
     font-weight: bold;
+    color: #111;
 }
 
+
+
+.section.intro-2 {
+    background-color: #fafafa;
+}
+.section.intro-2 .inner {
+    max-width: 1720px;
+    width: 100%;
+    padding: 0 20px;
+    padding-top: 120px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    color: #111;
+}
+.section.intro-2 .inner .box-1 {
+    display: flex;
+    gap: 127px;
+    font-family: 'Pretendard', 'Noto Sans KR';
+}
+.section.intro-2 .inner .box-1 h3 {
+    font-family: 'Lexend Zetta';
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+.section.intro-2 .inner .box-1 .left,
+.section.intro-2 .inner .box-1 .right {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.section.intro-2 .inner .box-1 .left .text,
+.section.intro-2 .inner .box-1 .right .text {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    line-height: 1.5;
+}
+.section.intro-2 .inner .box-1 .left .text h4,
+.section.intro-2 .inner .box-1 .right .text h4 {
+    font-size: 24px;
+    font-weight: 600;
+}
+.section.intro-2 .inner .box-1 .left .text h5,
+.section.intro-2 .inner .box-1 .right .text h5 {
+    font-size: 20px;
+    font-weight: 600;
+}
 
 
 
