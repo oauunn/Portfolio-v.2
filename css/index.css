@@ -121,6 +121,7 @@ body {
     border-top: 15px solid #111;
     padding: 100px;
 }
+
 .section.intro-2 .inner .box .left,
 .section.intro-2 .inner .box .right {
     display: flex;
@@ -142,6 +143,7 @@ body {
     flex-direction: column;
     gap: 50px;
 }
+
 .section.intro-2 .inner .box .left .text {
     display: flex;
     flex-direction: column;
@@ -267,6 +269,7 @@ body {
     display: flex;
     gap: 20px;
 }
+
 .section.about .inner .right .box-6 ul img {
     width: 30px;
     object-fit: cover;
@@ -278,111 +281,60 @@ body {
 
 /* 프로젝트 */
 .section.project {
-    background-color: #222222;
+    background-color: #fafafa;
 }
 
 .section.project .inner {
-    max-width: 1720px;
+    max-width: 1920px;
     width: 100%;
     padding: 0 20px;
     margin: 0 auto;
     padding-top: 120px;
+    background-color: #1c1c1c;
 }
 
-.section.project .inner h2 {
-    font-family: 'Lexend Zetta';
-    font-size: 48px;
-    font-weight: bold;
-    text-align: center;
-    color: #fff;
-    margin-bottom: 50px;
-}
-
-.section.project .inner .tab {
-    display: flex;
-    gap: 20px;
-    font-family: 'Pretendard', 'Noto Sans KR';
-    font-size: 16px;
-    font-weight: 400;
-    color: #222222;
-    margin-bottom: 50px;
-}
-
-.section.project .inner .tab button {
-    background-color: #f5f5f5;
-    padding: 10px 20px;
-    border: 1px solid #222222;
-    border-radius: 50px;
-}
-
-.section.project .inner .tab button.active {
-    background-color: darkorange;
-    /* color: #f5f5f5; */
-}
-
-.section.project .inner .list {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    row-gap: 70px;
-    padding-bottom: 200px;
-}
-
-.section.project .inner .list .item {
-    display: inline-block;
-    padding: 20px;
-    background-color: #fff;
-}
-
-.section.project .inner .list .item img {
-    width: 430px;
-    object-fit: cover;
-    border: 1px solid #222222;
-    margin-bottom: 10px;
-}
-
-.section.project .inner .list .item .text {
+.section.project .inner .top {
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    font-family: 'Pretendard', 'Noto Sans KR';
-    line-height: 1.5;
-    color: #222222;
-}
-
-.section.project .inner .list .item .text h3 {
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.section.project .inner .list .item .text p {
-    font-size: 16px;
-    font-weight: 400;
-}
-
-.section.project .inner .list .item .text ul {
-    display: flex;
     gap: 10px;
+    line-height: 1.5;
+    color: #ebebeb;
 }
 
-.section.project .inner .list .item .text ul li {
-    padding: 5px 10px;
-    border: 1px solid #222222;
-    border-radius: 50px;
-    font-size: 12px;
-    font-weight: 400;
+.section.project .inner .top h1 {
+    font-family: 'Lexend Zetta';
+    font-weight: bold;
+    font-size: 48px;
+    color: #F4511E;
 }
 
-.section.project .inner .list .item .text a {
-    padding: 10px 20px;
-    border: 1px solid #222;
-    border-radius: 50px;
-    font-size: 14px;
+.section.project .inner .top strong {
+    font-family: 'Pretendard', 'Noto Sans KR';
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.section.project .inner .top p {
+    font-family: 'Pretendard', 'Noto Sans KR';
     font-weight: 500;
-    text-align: center;
-    background-color: darkorange;
+    font-size: 20px;
 }
 
+.section.project .inner .bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: 'Pretendard', 'Noto Sans KR';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #ebebeb;
+}
+
+.section.project .inner .bottom ul {
+    display: flex;
+    gap: 20px;
+}
 
 
 /* 디자인 */
