@@ -86,63 +86,76 @@ body {
     width: 100%;
     margin: 0 auto;
     min-height: 100vh;
-    line-height: 100vh;
     text-align: center;
 }
 
 .section.intro .inner h1 {
+    padding-top: 400px;
     font-family: 'Lexend Zetta';
     font-size: 160px;
     font-weight: bold;
     color: #111;
+    border-bottom: 15px solid #111;
+    line-height: 2;
 }
+
 
 
 
 .section.intro-2 {
     background-color: #fafafa;
 }
+
 .section.intro-2 .inner {
-    max-width: 1720px;
+    max-width: 1920px;
     width: 100%;
-    padding: 0 20px;
     padding-top: 120px;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
     color: #111;
 }
-.section.intro-2 .inner .box-1 {
+
+.section.intro-2 .inner .box {
+    margin-top: 600px;
     display: flex;
-    gap: 127px;
+    justify-content: space-between;
+    border-top: 15px solid #111;
+    padding: 100px;
+}
+.section.intro-2 .inner .box .left,
+.section.intro-2 .inner .box .right {
+    display: flex;
+    gap: 130px;
     font-family: 'Pretendard', 'Noto Sans KR';
 }
-.section.intro-2 .inner .box-1 h3 {
+
+.section.intro-2 .inner .box .left h3,
+.section.intro-2 .inner .box .right h3 {
     font-family: 'Lexend Zetta';
     font-size: 32px;
     font-weight: 600;
     line-height: 1.5;
 }
-.section.intro-2 .inner .box-1 .left,
-.section.intro-2 .inner .box-1 .right {
+
+.section.intro-2 .inner .box .left .top,
+.section.intro-2 .inner .box .left .bottom {
     display: flex;
     flex-direction: column;
     gap: 50px;
 }
-.section.intro-2 .inner .box-1 .left .text,
-.section.intro-2 .inner .box-1 .right .text {
+.section.intro-2 .inner .box .left .text {
     display: flex;
     flex-direction: column;
     gap: 5px;
     line-height: 1.5;
+    color: #333;
 }
-.section.intro-2 .inner .box-1 .left .text h4,
-.section.intro-2 .inner .box-1 .right .text h4 {
+
+.section.intro-2 .inner .box .left .text h4 {
     font-size: 24px;
     font-weight: 600;
 }
-.section.intro-2 .inner .box-1 .left .text h5,
-.section.intro-2 .inner .box-1 .right .text h5 {
+
+.section.intro-2 .inner .box .left .text h5 {
     font-size: 20px;
     font-weight: 600;
 }
