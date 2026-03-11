@@ -267,6 +267,10 @@ body {
     display: flex;
     gap: 20px;
 }
+.section.about .inner .right .box-6 ul img {
+    width: 30px;
+    object-fit: cover;
+}
 
 
 
@@ -383,7 +387,7 @@ body {
 
 /* 디자인 */
 .section.design {
-    background-color: #1c1c1c;
+    background-color: #111;
 }
 
 .section.design .inner {
@@ -433,38 +437,12 @@ body {
 
 
 
-/* AI */
-.section.ai {
-    background-color: #222222;
-}
-
-.section.ai .inner {
-    max-width: 1720px;
-    width: 100%;
-    padding: 0 20px;
-    margin: 0 auto;
-    padding-top: 120px;
-    display: flex;
-    flex-direction: column;
-    gap: 100px;
-}
-
-.section.ai .inner h2 {
-    font-family: 'Lexend Zetta';
-    font-size: 48px;
-    font-weight: bold;
-    text-align: center;
-    color: #fff;
-}
-
-
-
-
-
 /* 컨택 */
 .section.contact {
     padding: 300px 0 200px 0;
     position: relative;
+    background-color: #fafafa;
+    color: #111;
 }
 
 .section.contact .inner {
@@ -510,7 +488,7 @@ body {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #333;
+    background-color: #111;
     font-family: 'Source Code Pro', 'Lato';
     padding: 20px 0;
     text-align: center;
