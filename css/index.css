@@ -168,8 +168,8 @@ body {
     padding: 50px 0;
     font-family: 'Pretendard', 'Noto Sans KR';
     line-height: 1.5;
-    color: #222;
-    background-color: #f6f6f6;
+    color: #fff;
+    background-color: #111;
 }
 
 .section.about .inner {
@@ -202,6 +202,7 @@ body {
 .section.about .inner .left .text {
     display: flex;
     gap: 40px;
+    font-size: 18px;
 }
 
 .section.about .inner .left .text .box-1 {
@@ -245,7 +246,7 @@ body {
 .section.about .inner .right .box-5 .text {
     display: flex;
     gap: 50px;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .section.about .inner .right .box-3 .text ul,
