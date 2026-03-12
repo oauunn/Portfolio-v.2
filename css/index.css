@@ -348,6 +348,7 @@ body {
     font-weight: 600;
     color: #fff;
 }
+
 .section.project .inner .bottom .right a {
     padding: 20px 40px;
     border-radius: 50px;
@@ -355,8 +356,32 @@ body {
     color: #fff;
 }
 
+.section.project.project-vans {
+    background-image: url("/img/Vans-main.jpg");
+    background-size: cover;
+}
+
+.section.project.project-vans .inner,
+.section.project.project-stanley .inner,
+.section.project.project-casetify .inner,
+.section.project.project-kyobo .inner {
+    backdrop-filter: blur(2px);
+}
 
 
+.section.project.project-stanley {
+    background-image: url("/img/STANLEY-main.jpg");
+    background-size: cover;
+}
+
+.section.project.project-casetify {
+    background-image: url("/img/CASETiFY-main.jpg");
+    background-size: cover;
+}
+.section.project.project-kyobo {
+    background-image: url("/img/kyobo.png");
+    background-size: cover;
+}
 
 /* 디자인 */
 .section.design {
