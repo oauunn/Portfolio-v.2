@@ -361,14 +361,6 @@ body {
     background-size: cover;
 }
 
-.section.project.project-vans .inner,
-.section.project.project-stanley .inner,
-.section.project.project-casetify .inner,
-.section.project.project-kyobo .inner {
-    backdrop-filter: blur(2px);
-}
-
-
 .section.project.project-stanley {
     background-image: url("/img/STANLEY-main.jpg");
     background-size: cover;
@@ -378,9 +370,17 @@ body {
     background-image: url("/img/CASETiFY-main.jpg");
     background-size: cover;
 }
+
 .section.project.project-kyobo {
     background-image: url("/img/kyobo.png");
     background-size: cover;
+}
+
+.section.project.project-vans .inner,
+.section.project.project-stanley .inner,
+.section.project.project-casetify .inner,
+.section.project.project-kyobo .inner {
+    backdrop-filter: blur(2px);
 }
 
 /* 디자인 */
