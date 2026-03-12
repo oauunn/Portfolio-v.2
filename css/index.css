@@ -45,12 +45,10 @@ body {
 
 #header.dark {
     color: #fff;
-    background: rbga(0, 0, 0, 0.6);
 }
 
 #header.light {
     color: #111;
-    background: rbga(255, 255, 255, 0.8);
 }
 
 #header .inner {
@@ -281,10 +279,26 @@ body {
 
 /* 프로젝트 */
 .section.project {
-    background-color: #111;
+    position: relative;
+}
+
+.section.project::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.9) 0%,
+    rgba(0,0,0,0.4) 40%,
+    rgba(0,0,0,0.4) 60%,
+    rgba(0,0,0,0.9) 100%
+);
+    z-index: 1;
 }
 
 .section.project .inner {
+    position: relative;
+    z-index: 2;
     max-width: 1620px;
     width: 100%;
     padding: 0 20px;
@@ -381,6 +395,7 @@ body {
 .section.project.project-casetify .inner,
 .section.project.project-kyobo .inner {
     backdrop-filter: blur(2px);
+    backdrop-filter: linear-gradient(180deg, rgba(17, 17, 17, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(17, 17, 17, 1) 100%);
 }
 
 /* 디자인 */
