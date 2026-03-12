@@ -117,7 +117,7 @@ body {
 .section.intro-2 .inner .box {
     margin-top: 600px;
     display: flex;
-    justify-content: space-between;
+    gap: 400px;
     border-top: 15px solid #111;
     padding: 100px;
 }
@@ -178,7 +178,7 @@ body {
     max-width: 1520px;
     width: 100%;
     padding: 0 20px;
-    padding-top: 120px;
+    padding-top: 150px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -344,7 +344,11 @@ body {
     gap: 20px;
 }
 
-.section.project .inner .bottom .right {
+.section.project .inner .bottom .left li:first-child {
+    font-weight: 600;
+    color: #fff;
+}
+.section.project .inner .bottom .right a {
     padding: 20px 40px;
     border-radius: 50px;
     background-color: #F4511E;
