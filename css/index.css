@@ -389,10 +389,15 @@ body {
     background-image: url("/img/kyobo.png");
     background-size: cover;
 }
+.section.project.project-jansport {
+    background-image: url("/img/jansport.png");
+    background-size: cover;
+}
 
 .section.project.project-vans .inner,
 .section.project.project-stanley .inner,
 .section.project.project-casetify .inner,
+.section.project.project-jansport .inner,
 .section.project.project-kyobo .inner {
     backdrop-filter: blur(2px);
     backdrop-filter: linear-gradient(180deg, rgba(17, 17, 17, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(17, 17, 17, 1) 100%);
