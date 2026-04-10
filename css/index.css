@@ -115,7 +115,7 @@ body {
 .section.intro-2 .inner .box {
     margin-top: 500px;
     display: flex;
-    gap: 400px;
+    gap: 270px;
     border-top: 15px solid #111;
     padding: 100px;
 }
@@ -135,8 +135,9 @@ body {
     line-height: 1.5;
 }
 
-.section.intro-2 .inner .box .left .top,
-.section.intro-2 .inner .box .left .bottom {
+.section.intro-2 .inner .box .left .group-1,
+.section.intro-2 .inner .box .left .group-2,
+.section.intro-2 .inner .box .left .group-3 {
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -151,12 +152,12 @@ body {
 }
 
 .section.intro-2 .inner .box .left .text h4 {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 600;
 }
 
 .section.intro-2 .inner .box .left .text h5 {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
 }
 
@@ -286,13 +287,11 @@ body {
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(
-    to bottom,
-    rgba(0,0,0,0.9) 0%,
-    rgba(0,0,0,0.4) 40%,
-    rgba(0,0,0,0.4) 60%,
-    rgba(0,0,0,0.9) 100%
-);
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.9) 0%,
+            rgba(0, 0, 0, 0.4) 40%,
+            rgba(0, 0, 0, 0.4) 60%,
+            rgba(0, 0, 0, 0.9) 100%);
     z-index: 1;
 }
 
@@ -389,6 +388,7 @@ body {
     background-image: url("/img/kyobo.png");
     background-size: cover;
 }
+
 .section.project.project-jansport {
     background-image: url("/img/jansport.png");
     background-size: cover;
