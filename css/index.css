@@ -115,7 +115,7 @@ body {
 .section.intro-2 .inner .box {
     margin-top: 500px;
     display: flex;
-    gap: 270px;
+    gap: 200px;
     border-top: 15px solid #111;
     padding: 100px;
 }
@@ -370,27 +370,27 @@ body {
 }
 
 .section.project.project-vans {
-    background-image: url("/img/Vans-main.jpg");
+    background-image: url("/Portfolio-v.2/img/Vans-main.jpg");
     background-size: cover;
 }
 
 .section.project.project-stanley {
-    background-image: url("/img/STANLEY-main.jpg");
+    background-image: url("/Portfolio-v.2/img/STANLEY-main.jpg");
     background-size: cover;
 }
 
 .section.project.project-casetify {
-    background-image: url("/img/CASETiFY-main.jpg");
+    background-image: url("/Portfolio-v.2/img/CASETiFY-main.jpg");
     background-size: cover;
 }
 
 .section.project.project-kyobo {
-    background-image: url("/img/kyobo.png");
+    background-image: url("/Portfolio-v.2/img/kyobo.png");
     background-size: cover;
 }
 
 .section.project.project-jansport {
-    background-image: url("/img/jansport.png");
+    background-image: url("/Portfolio-v.2/img/jansport.png");
     background-size: cover;
 }
 
