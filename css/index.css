@@ -427,18 +427,17 @@ body {
     color: #fff;
 }
 
-.section.design .inner .item {
+.section.design .inner .swiper.mySwiper {
+    width: 100%;
+}
+
+.section.design .inner .swiper.mySwiper .swiper-wrapper .swiper-slide {
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
-
-.section.design .inner .item li {
+.section.design .inner .swiper.mySwiper .swiper-wrapper .swiper-slide img {
+    display: block;
     width: 400px;
-}
-
-.section.design .inner .item li img {
-    width: 100%;
     object-fit: cover;
     border: 1px solid #fff;
 }
