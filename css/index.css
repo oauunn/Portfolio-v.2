@@ -437,14 +437,12 @@ body {
 }
 
 .section.design .inner .swiper.mySwiper .swiper-wrapper .swiper-slide.poster img {
-    display: block;
     width: 400px;
     object-fit: cover;
     border: 1px solid #fff;
 }
 
 .section.design .inner .swiper.mySwiper .swiper-wrapper .swiper-slide.card img {
-    display: block;
     width: 500px;
     object-fit: cover;
     border: 1px solid #fff;
