@@ -435,6 +435,7 @@ body {
     display: flex;
     justify-content: space-between;
 }
+
 .section.design .inner .swiper.mySwiper .swiper-wrapper .swiper-slide.poster img {
     display: block;
     width: 400px;
@@ -595,33 +596,138 @@ body {
 /* 태블릿 (1024px 이하) */
 @media (max-width: 1024px) {
 
+    /* 헤더 */
+    #header {
+        height: 100px;
+    }
+
     #header .inner {
         padding: 30px;
     }
 
     #header .menu {
         gap: 20px;
-        font-size: 16px;
+        font-size: 14px;
     }
 
+
+    /* intro */
+    .section.intro .inner h1 {
+        font-size: clamp(80px, 10vw, 120px);
+        padding-top: 300px;
+    }
+
+
+    /* intro-2 */
+    .section.intro-2 .inner .box {
+        flex-direction: column;
+        margin-top: 300px;
+        gap: 100px;
+        padding: 60px;
+    }
+
+    .section.intro-2 .inner .box .left,
+    .section.intro-2 .inner .box .right {
+        gap: 100px;
+    }
+
+    .section.intro-2 .inner .box .left h3,
+    .section.intro-2 .inner .box .right h3 {
+        font-size: 20px;
+    }
+
+    .section.intro-2 .inner .box .left .text h4,
+    .section.intro-2 .inner .box .right .text h4 {
+        font-size: 18px;
+    }
+
+    .section.intro-2 .inner .box .left .text h5,
+    .section.intro-2 .inner .box .left .text h5 {
+        font-size: 14px;
+    }
+
+    /* about */
     .section.about .inner {
         flex-direction: column;
         gap: 60px;
     }
 
-    .section.about .inner .left,
-    .section.about .inner .right {
-        padding: 0;
+    .section.about .inner .left {
+        padding-left: 0;
+        align-items: center;
     }
 
-    .section.design .inner .item {
-        flex-wrap: wrap;
-        gap: 20px;
-        justify-content: center;
+    .section.about .inner .left .picture {
+        width: 300px;
     }
 
-    .section.design .inner .item li {
-        width: 45%;
+    .section.about .inner .left .text {
+        font-size: 16px;
+    }
+
+    .section.about .inner .right .box-3 .text,
+    .section.about .inner .right .box-4 .text,
+    .section.about .inner .right .box-5 .text {
+        gap: 30px;
+        font-size: 16px;
+    }
+
+
+    /* project */
+    .section.project .inner {
+        gap: 200px;
+    }
+
+    .section.project .inner .top h1 {
+        font-size: 40px;
+    }
+
+    .section.project .inner .top strong {
+        font-size: 20px;
+    }
+
+    .section.project .inner .top p {
+        font-size: 18px;
+    }
+
+    .section.project .inner .bottom {
+        font-size: 18px;
+    }
+
+    .section.project .inner .bottom .right a {
+        padding: 15px 30px;
+    }
+
+
+    /* design */
+    .section.design .inner {
+        gap: 80px;
+    }
+
+    .section.design .inner h2 {
+        font-size: 40px;
+    }
+
+    .section.design .swiper-slide.poster img {
+        width: 250px;
+    }
+
+    .section.design .swiper-slide.card img {
+        width: 350px;
+    }
+
+
+    /* contact */
+    .section.contact {
+        padding: 200px 0;
+    }
+
+    .section.contact .inner {
+        gap: 120px;
+    }
+
+    .section.contact .inner h3 {
+        font-size: 22px;
     }
 }
 
@@ -629,29 +735,183 @@ body {
 /* 모바일 (768px 이하) */
 @media (max-width: 768px) {
 
+    /* 헤더 */
+    #header {
+        height: 80px;
+    }
+
+    #header .inner {
+        padding: 20px;
+    }
+
     #header .menu {
         display: none;
     }
 
+
+    /* intro */
     .section.intro .inner h1 {
-        font-size: 80px;
-        line-height: 1.1;
+        font-size: clamp(40px, 12vw, 80px);
+        padding-top: 200px;
+        border-bottom: 5px solid #111;
     }
 
+
+    /* intro-2 */
+    .section.intro-2 .inner {
+        padding-top: 80px;
+    }
+
+    .section.intro-2 .inner .box {
+        display: flex;
+        justify-content: space-between;
+        padding: 40px 20px;
+        margin-top: 150px;
+    }
+
+    .section.intro-2 .inner .box .left,
+    .section.intro-2 .inner .box .right {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .section.intro-2 .inner .box .left h3,
+    .section.intro-2 .inner .box .right h3 {
+        font-size: 18px;
+    }
+    .section.intro-2 .inner .box .left .text h4,
+    .section.intro-2 .inner .box .right .text h4 {
+        font-size: 16px;
+    }
+
+    .section.intro-2 .inner .box .left .text h5,
+    .section.intro-2 .inner .box .left .text h5 {
+        font-size: 12px;
+    }
+
+
+    /* about */
     .section.about {
         padding: 80px 0;
     }
 
+    .section.about .inner {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .section.about .inner .left {
+        align-items: center;
+        text-align: center;
+        padding-left: 0;
+    }
+
     .section.about .inner .left .picture {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .section.about .inner .left .text {
+        justify-content: center;
+        font-size: 16px;
+    }
+
+    .section.about .inner .right .box-3 .text,
+    .section.about .inner .right .box-4 .text,
+    .section.about .inner .right .box-5 .text {
+        flex-direction: column;
+        gap: 10px;
+        font-size: 16px;
+    }
+
+    .section.about .inner .right .box-6 ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
+    /* project */
+    .section.project .inner {
+        padding-top: 100px;
+        gap: 100px;
+    }
+
+    .section.project .inner .top h1 {
+        font-size: 32px;
+    }
+
+    .section.project .inner .top strong {
+        font-size: 18px;
+    }
+
+    .section.project .inner .top p {
+        font-size: 16px;
+    }
+
+    .section.project .inner .bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        font-size: 16px;
+    }
+
+    .section.project .inner .bottom .left ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .section.project .inner .bottom .right {
         width: 100%;
     }
 
-    .section.design .inner .item li {
+    .section.project .inner .bottom .right a {
+        display: block;
         width: 100%;
+        text-align: center;
+        padding: 15px;
+    }
+
+
+    /* design */
+    .section.design .inner {
+        gap: 60px;
+    }
+
+    .section.design .inner h2 {
+        font-size: 32px;
+    }
+
+    .section.design .swiper-slide {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .section.design .swiper-slide img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+
+    /* contact */
+    .section.contact {
+        padding: 150px 0;
+    }
+
+    .section.contact .inner {
+        gap: 80px;
     }
 
     .section.contact .inner h3 {
         font-size: 18px;
         letter-spacing: 2px;
+    }
+
+    .section.contact .inner .icon {
+        gap: 30px;
+    }
+
+    .section.contact .inner .icon li {
+        width: 40px;
     }
 }
