@@ -483,7 +483,12 @@ body {
     text-align: center;
 }
 
-.section.contact .inner h3 {
+.section.contact .inner .text {
+    display: flex;
+    flex-direction: column;
+}
+
+.section.contact .inner .text h3 {
     font-family: 'Lato';
     font-size: 28px;
     font-weight: bold;
@@ -649,7 +654,8 @@ body {
     /* about */
     .section.about .inner {
         flex-direction: column;
-        gap: 60px;
+        gap: 100px;
+        margin-bottom: 40px;
     }
 
     .section.about .inner .left {
@@ -662,6 +668,18 @@ body {
     }
 
     .section.about .inner .left .text {
+        font-size: 16px;
+    }
+
+    .section.about .inner .right {
+        margin: 0 auto;
+        gap: 50px;
+    }
+
+    .section.about .inner .right .box-3 h3,
+    .section.about .inner .right .box-4 h3,
+    .section.about .inner .right .box-5 h3,
+    .section.about .inner .right .box-6 h3 {
         font-size: 16px;
     }
 
@@ -779,6 +797,7 @@ body {
     .section.intro-2 .inner .box .right h3 {
         font-size: 18px;
     }
+
     .section.intro-2 .inner .box .left .text h4,
     .section.intro-2 .inner .box .right .text h4 {
         font-size: 16px;
