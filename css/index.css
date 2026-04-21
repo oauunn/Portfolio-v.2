@@ -246,7 +246,8 @@ body {
 .section.about .inner .right .box-4 .text,
 .section.about .inner .right .box-5 .text {
     display: flex;
-    gap: 50px;
+    flex-direction: column;
+    gap: 10px;
     font-size: 18px;
 }
 
@@ -254,13 +255,12 @@ body {
 .section.about .inner .right .box-4 .text ul,
 .section.about .inner .right .box-5 .text ul {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    gap: 50px;
 }
 
-.section.about .inner .right .box-3 .text ul:last-child,
-.section.about .inner .right .box-4 .text ul:last-child,
-.section.about .inner .right .box-5 .text ul:last-child {
+.section.about .inner .right .box-3 .text ul li:last-child,
+.section.about .inner .right .box-4 .text ul li:last-child,
+.section.about .inner .right .box-5 .text ul li:last-child {
     color: #777;
 }
 
@@ -760,8 +760,16 @@ body {
         padding: 20px;
     }
 
+    #header .inner .name {
+        font-size: 12px;
+    }
+
     #header .menu {
         display: none;
+    }
+
+    #header .menu li {
+        font-size: 12px;
     }
 
 
@@ -838,7 +846,7 @@ body {
     .section.about .inner .right .box-5 .text {
         flex-direction: column;
         gap: 10px;
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .section.about .inner .right .box-6 ul {
