@@ -724,12 +724,18 @@ body {
         font-size: 40px;
     }
 
-    .section.design .swiper-slide.poster img {
-        width: 250px;
+    .section.design .inner .swiper.mySwiper .swiper-wrapper .swiper-slide.poster img {
+        width: 240px;
+        object-fit: cover;
     }
 
-    .section.design .swiper-slide.card img {
-        width: 350px;
+    .section.design .inner .swiper.mySwiper .swiper-wrapper .swiper-slide.card {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .section.design .inner .swiper.mySwiper .swiper-wrapper .swiper-slide.card img {
+        width: 480px;
+        object-fit: cover;
     }
 
 
@@ -742,7 +748,7 @@ body {
         gap: 120px;
     }
 
-    .section.contact .inner h3 {
+    .section.contact .inner .text h3 {
         font-size: 22px;
     }
 }
