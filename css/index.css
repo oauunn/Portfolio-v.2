@@ -89,7 +89,7 @@ body {
 
 .section.intro .inner h1 {
     position: relative;
-    padding-top: 400px;
+    padding-top: 300px;
     font-family: 'Lexend Zetta';
     font-size: 160px;
     font-weight: bold;
@@ -100,8 +100,8 @@ body {
 
 .section.intro .inner .qr {
     position: absolute;
-    left: 40px;
-    bottom: 40px;
+    right: 70px;
+    bottom: 50px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -320,14 +320,14 @@ body {
 .section.project .inner {
     position: relative;
     z-index: 2;
-    max-width: 1620px;
+    max-width: 1720px;
     width: 100%;
     padding: 0 20px;
     margin: 0 auto;
     padding-top: 150px;
     display: flex;
     flex-direction: column;
-    gap: 400px;
+    gap: 360px;
 }
 
 .section.project .inner .top {
