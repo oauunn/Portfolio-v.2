@@ -370,27 +370,27 @@ body {
 }
 
 .section.project.project-vans {
-    background-image: url("/img/Vans-main.jpg");
+    background-image: url("../img/Vans-main.jpg");
     background-size: cover;
 }
 
 .section.project.project-stanley {
-    background-image: url("/img/STANLEY-main.jpg");
+    background-image: url("../img/STANLEY-main.jpg");
     background-size: cover;
 }
 
 .section.project.project-casetify {
-    background-image: url("/img/CASETiFY-main.jpg");
+    background-image: url("../img/CASETiFY-main.jpg");
     background-size: cover;
 }
 
 .section.project.project-kyobo {
-    background-image: url("/img/kyobo.png");
+    background-image: url("../img/kyobo.png");
     background-size: cover;
 }
 
 .section.project.project-jansport {
-    background-image: url("/img/jansport.png");
+    background-image: url("../img/jansport.png");
     background-size: cover;
 }
 
@@ -434,10 +434,12 @@ body {
 .section.design .inner .swiper.mySwiper .swiper-wrapper .swiper-slide {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
 }
 
 .section.design .inner .swiper.mySwiper .swiper-wrapper .swiper-slide.poster img {
-    width: 400px;
+    width: 380px;
     object-fit: cover;
     border: 1px solid #fff;
 }
@@ -724,6 +726,10 @@ body {
         font-size: 40px;
     }
 
+    .section.design .inner .swiper.mySwiper .swiper-wrapper .swiper-slide.poster {
+        flex-wrap: wrap;
+        gap: 40px;
+    }
     .section.design .inner .swiper.mySwiper .swiper-wrapper .swiper-slide.poster img {
         width: 240px;
         object-fit: cover;
@@ -731,10 +737,10 @@ body {
 
     .section.design .inner .swiper.mySwiper .swiper-wrapper .swiper-slide.card {
         flex-wrap: wrap;
-        gap: 20px;
+        gap: 40px;
     }
     .section.design .inner .swiper.mySwiper .swiper-wrapper .swiper-slide.card img {
-        width: 480px;
+        width: 400px;
         object-fit: cover;
     }
 
@@ -906,6 +912,7 @@ body {
     /* design */
     .section.design .inner {
         gap: 60px;
+        padding-bottom: 100px;
     }
 
     .section.design .inner h2 {
