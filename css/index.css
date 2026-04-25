@@ -965,8 +965,8 @@ body {
         gap: 80px;
     }
 
-    .section.contact .inner h3 {
-        font-size: 18px;
+    .section.contact .inner .text h3 {
+        font-size: 16px;
         letter-spacing: 2px;
     }
 
