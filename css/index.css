@@ -730,6 +730,7 @@ body {
         flex-wrap: wrap;
         gap: 40px;
     }
+
     .section.design .inner .swiper.mySwiper .swiper-wrapper .swiper-slide.poster img {
         width: 240px;
         object-fit: cover;
@@ -739,6 +740,7 @@ body {
         flex-wrap: wrap;
         gap: 40px;
     }
+
     .section.design .inner .swiper.mySwiper .swiper-wrapper .swiper-slide.card img {
         width: 400px;
         object-fit: cover;
@@ -834,7 +836,7 @@ body {
 
     .section.about .inner {
         flex-direction: column;
-        gap: 40px;
+        gap: 80px;
     }
 
     .section.about .inner .left {
@@ -850,7 +852,8 @@ body {
 
     .section.about .inner .left .text {
         justify-content: center;
-        font-size: 16px;
+        font-size: 14px;
+        text-align: justify;
     }
 
     .section.about .inner .right .box-3 .text,
@@ -870,7 +873,7 @@ body {
     /* project */
     .section.project .inner {
         padding-top: 100px;
-        gap: 100px;
+        gap: 250px;
     }
 
     .section.project .inner .top h1 {
@@ -889,7 +892,7 @@ body {
         flex-direction: column;
         align-items: flex-start;
         gap: 20px;
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .section.project .inner .bottom .left ul {
