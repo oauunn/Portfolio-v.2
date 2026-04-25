@@ -800,8 +800,9 @@ body {
         font-size: 12px;
     }
 
-    #header .menu {
-        display: none;
+    #header .inner .menu {
+        /* display: none; */
+        gap: 20px;
     }
 
     #header .menu li {
@@ -895,7 +896,7 @@ body {
     /* project */
     .section.project .inner {
         padding-top: 100px;
-        gap: 250px;
+        gap: 180px;
     }
 
     .section.project .inner .top h1 {
