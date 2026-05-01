@@ -444,7 +444,7 @@ body {
 .section.design .inner h2 {
     font-family: 'Lexend Zetta';
     font-size: 48px;
-    font-weight: bold;
+    font-weight: 700;
     text-align: center;
     color: #fff;
 }
@@ -473,6 +473,7 @@ body {
 }
 
 .section.design .inner h3 {
+    margin-top: 60px;
     font-family: 'Pretendard';
     font-size: 18px;
     font-weight: 500;
