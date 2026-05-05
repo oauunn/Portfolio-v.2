@@ -457,7 +457,7 @@ body {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 30px;
 }
 
 .section.design .inner .swiper.mySwiper .swiper-wrapper .swiper-slide.poster img {
@@ -473,7 +473,7 @@ body {
 }
 
 .section.design .inner h3 {
-    margin-top: 60px;
+    margin-top: 70px;
     font-family: 'Pretendard';
     font-size: 18px;
     font-weight: 500;
