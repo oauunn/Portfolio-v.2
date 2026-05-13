@@ -356,6 +356,11 @@ body {
     font-weight: 500;
     font-size: 20px;
 }
+.section.project .inner .top span {
+    font-family: 'Pretendard', 'Noto Sans KR';
+    font-weight: 500;
+    font-size: 18px;
+}
 
 .section.project .inner .bottom {
     display: flex;
